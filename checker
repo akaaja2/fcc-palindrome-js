@@ -1,0 +1,9 @@
+String.prototype.replace()
+String.prototype.toLowerCase()
+
+
+function palindrome(str) {
+    // Good luck!
+    var filteredStr = str.replace(/[\W_]/g, '').toLowerCase();
+    return filteredStr === filteredStr.split('').reverse().join('');
+}
